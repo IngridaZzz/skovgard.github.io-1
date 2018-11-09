@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+        margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(imgs/bg.jpg) no-repeat center fixed; 
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* button + cover page */
+
+.b1 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(images/bg.jpg) no-repeat 50% 50%;
+    top: 0;
+    display: table;
+    background-size: cover;
+}
+
+.b1 .in1 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.content h1 {
+  color: #f9f3f4;
+  font-size: 500%;
+  text-shadow: 0 0 300px #000;
+}
+
+.content .btn {
+  border-radius: 9px;
+  color: #f9f3f4;
+  text-decoration: none;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  border: 3px solid;
+  padding: 7px 13px;
+  font-weight: bold;
+  align-content: center;
+}
+
+.content .btn:hover {
+    color: #000916;
+    background: white;
+    opacity: 0.5;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+/* button + cover page end */
+
+.title {
+    display: block;
+    position: absolute;
+    width : 240px;
+    height : 32px;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.title_artist {
+    display: block;
+    position: absolute;
+    width : 240px;
+    height : 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bar p {
+    font-weight: lighter;
+    font-size:20px;
+    text-align: center;
+}
+
+.bar p span {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+    font-size:2vw;
+}
+
+.bt1 
+{
+    float : right;
+    margin-right: 4px;
+}
+
+.bt2 
+{
+    float : right;
+    padding-right: 15px;
+}
+
+.bar {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    height: 60px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_prez {
+    margin-top: 15px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+} 
+
+.text_prez_artist {
+    margin-top: 15px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+} 
+
+.text_prez p {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: lighter;
+    font-size:2vw;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.text_prez_artist p {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: lighter;
+    font-size:1vw;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.categories_prez {
+    margin-top: 15px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    align-items: center;
+}
+
+.categories_prez_cent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 15px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size:2vw;
+    height: auto;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: lighter;
+    font-size: 70%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column_2_1 {
+    float: left;
+    width: 33%;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.column_2_2 {
+    float: left;
+    width: 66%;
+    padding: 5px;
+}
+
+.column_3 {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+
+.column_4 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+.categories_prez:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col_img {
+    display: block;
+    width : 60%;
+    min-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+      transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.column .img_txt {
+    position: absolute;
+    display: block;
+    width : 50%;
+    padding-top: 10%;
+    min-width: 50%;
+    font-size:2vw;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+      transition: .5s ease;
+  opacity: 0;
+}
+
+.column_2_2 .img_txt {
+    position: absolute;
+    display: block;
+    width : 50%;
+    padding-top: 10%;
+    min-width: 50%;
+    font-size:2vw;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+      transition: .5s ease;
+  opacity: 0;
+}
+
+.column .img_txt span {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding : 4px;
+}
+
+.column_3 .img_txt {
+    position: absolute;
+    display: block;
+    width : 33%;
+    min-width: 33%;
+    font-size:2vw;
+    color: white;
+    font-weight: lighter;
+}
+
+.column p {
+    font-weight: lighter;
+        font-size:2vw;
+}
+
+.column_2_2 p {
+    font-weight: lighter;
+        font-size:2vw;
+}
+
+.column_3 p {
+    font-weight: lighter;
+        font-size:2vw;
+}
+
+.column_4 p {
+    font-weight: lighter;
+        font-size:2vw;
+}
+
+.column .img_txt:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .column {
+        width: 100%;
+    }
+    
+    .column_3 {
+        width: 100%;
+    }
+    
+    .column .img_txt {
+        padding-top: 22.5%;
+        font-size:3vw;
+        width : 100%;
+    }
+    
+    .title {
+        display: block;
+        position: absolute;
+        width : 50%;
+        height : auto;
+        top: 50%; 
+        left: 25%;
+        transform: translateY(-50%);
+    }
+    .text_prez p {
+    font-size:14px;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .text_prez p {
+        font-size:28px;
+    }
+    
+    .text_prez_artist p {
+        font-size:22px;
+    }
+    
+    .bar p span {
+    font-size:20px;
+}
+    
+    footer p {
+        font-size:20px;
+    }
+}
